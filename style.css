@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: "Roboto", sans-serif;
+    font-family: "Orbitron", sans-serif;
     list-style: none;
     box-sizing: border-box;
     background: #000;
@@ -28,6 +28,14 @@ body {
     padding: 10px 30px;
   }
   
+   h1, h2, h5, p, span {
+    color: #fff;
+   }
+
+   p, span {
+    font-family: 'Roboto', sans-serif;
+   }
+
   .logo {
     color: #fff;
     font-weight: 600;
@@ -93,6 +101,8 @@ body {
     left: 34vw;
     z-index: 2;
   }
+
+  
   
   .earth img {
     width: 400px;
@@ -169,7 +179,7 @@ body {
   .bg2 img {
     width: 100vw;
     height: 100vh; 
-    filter: brightness(0.2);
+    filter: brightness(0.5);
   }
 
   section img#moon {
@@ -191,12 +201,51 @@ body {
     
   }
 
+  #mountains-behind, #mountains-front {
+    filter: brightness(0.3) ;
+    
+  }
+
+  
+
   /* PLANET SECTION */
 
   #third {
     position: relative;
-    background: linear-gradient( #000, #040410 );
+    background: linear-gradient( #000, #c03d06 );
+    height: 100vh;
+    display: flex;
   }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+  }
+  .heading {
+    font-size: 24px;
+  }
+
+  .details {
+    font-size: 16px;
+  }
+
+  .right  {
+    width: 100%;
+    max-width: 650px;
+  }
+
+   .planet img {
+    width: 500px;
+   }
+
+  
+
+
   
 
 

@@ -3,6 +3,7 @@
 let scene = document.getElementById("scene")
 let parallaxInstance = new Parallax(scene)
 
+
 let keys = [
     "Mercury",
     "Venus",
@@ -39,11 +40,27 @@ let keys = [
     let value = window.scrollY;
     stars.style.left = value * 0.25 + 'px';
     moon.style.top = value * 0.30 + 'px';
-    mountains_behind.style.top = value * 0 + 'px';
-    mountains_front.style.top = value * 0 + 'px';
+    //mountains_behind.style.top = value * 0 + 'px';
+    //mountains_front.style.top = value * 0 + 'px';
     text2.style.marginRight = value * 0.5 + 'px';
-    text2.style.marginTop = value * 0.2 + 'px';
+    //text2.style.marginTop = value * 0.2 + 'px';
   })
+
+  // Scroll through animation
+
+  const observer = new IntersectionObserver((entries) => {
+       entries.forEach((entry) => {
+         console.log(entry)
+         if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+         } else {
+          entry.target.classList.remove('show');
+         }
+       });
+  });
+
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
  
   
   
