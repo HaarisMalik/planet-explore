@@ -61,6 +61,7 @@ body {
   
   section {
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
   }
 
@@ -165,7 +166,7 @@ body {
      z-index: 1000;
   }
 
-  /*#040410 */
+  
   #second img{
     position: absolute;
     top: 0;
@@ -179,7 +180,7 @@ body {
   .bg2 img {
     width: 100vw;
     height: 100vh; 
-    filter: brightness(0.5);
+   /* filter: brightness(0.6);*/
   }
 
   section img#moon {
@@ -195,7 +196,8 @@ body {
     right: 80px;
     color: #fff;
     white-space: nowrap;
-    font-size: 5.5vw;
+    font-size: 5vw;
+    letter-spacing: 5px;
     font-family: "Orbitron", sans-serif !important;
     z-index: 9;
     
@@ -206,16 +208,9 @@ body {
     
   }
 
-  
+
 
   /* PLANET SECTION */
-
-  #third {
-    position: relative;
-    background: linear-gradient( #000, #c03d06 );
-    height: 100vh;
-    display: flex;
-  }
 
   .container {
     width: 100%;
@@ -240,8 +235,87 @@ body {
   }
 
    .planet img {
-    width: 500px;
+    animation: bounce 800ms infinite alternate-reverse;
    }
+
+   @keyframes bounce {
+    0% {
+        transform: translateY(8px)
+    }
+
+    100% {
+        transform: translateY(-8px);
+    }
+}
+
+/* planets sections */
+
+#third {
+  position: relative;
+  background: radial-gradient( #c03d06 30%, #000 70%);
+  height: 100vh;
+  display: flex; 
+}
+
+#fourth {
+  position: relative;
+  background: radial-gradient( #c01906 30%, #000 70% );
+  height: 100vh;
+  display: flex;
+}
+
+
+#fifth {
+  position: relative;
+  background: radial-gradient( #06a1c0 30%, #000 65%);
+  height: 100vh;
+  display: flex;
+}
+
+#sixth {
+  position: relative;
+  background: radial-gradient( #fc4c00 30%, #000 65% );
+  height: 100vh;
+  display: flex;
+}
+
+#seventh {
+  position: relative;
+  background: radial-gradient( #f8b294 30%, #000 65% );
+  height: 100vh;
+  display: flex;
+}
+
+#eighth {
+  position: relative;
+  background: radial-gradient( #e5c0b0 30%, #000 65%  );
+  height: 100vh;
+  display: flex;
+}
+
+#ninth {
+  position: relative;
+  background: radial-gradient( #bb2c01 30%, #000 65% );
+  height: 100vh;
+  display: flex;
+}
+
+#tenth {
+  position: relative;
+  background: radial-gradient( #0046c8 30%, #000 65% );
+  height: 100vh;
+  display: flex;
+}
+
+
+
+
+
+
+
+   
+
+   
 
   
 
