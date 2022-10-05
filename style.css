@@ -36,10 +36,12 @@ body {
     font-family: 'Roboto', sans-serif;
    }
 
-  .logo {
+  .logo img {
     color: #fff;
     font-weight: 600;
     font-size: 16px;
+    width: 110px;
+    
   }
   
   nav .nav-links ul {
@@ -55,6 +57,25 @@ body {
   nav .nav-links ul li img {
     transform: scale(0.45);
     cursor: not-allowed;
+  }
+
+  .scroll-icon img {
+    position: absolute;
+    width: 35px;
+    z-index: 1;
+    bottom: 0;
+    right: 45vw;
+    padding-bottom: 35px;
+    animation: bounce 800ms infinite alternate-reverse;
+  }
+
+  .scroll-icon p {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 40vw;
+    padding-bottom: 80px;
+    font-family: 'Orbitron', sans-serif;
   }
 
   
@@ -196,7 +217,7 @@ body {
     right: 80px;
     color: #fff;
     white-space: nowrap;
-    font-size: 5vw;
+    font-size: 4.5vw;
     letter-spacing: 5px;
     font-family: "Orbitron", sans-serif !important;
     z-index: 9;
@@ -306,6 +327,43 @@ body {
   height: 100vh;
   display: flex;
 }
+
+/* footer */
+
+
+footer {
+  border-top: 1px solid whitesmoke;
+  margin-top: 28px;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.footer-list ul {
+  display: flex;
+  padding-right: 32px;
+  cursor: not-allowed;
+}
+
+
+.footer-list li {
+  padding: 24px;
+ 
+}
+
+.copyright {
+  text-align: center;
+}
+
+
 
 
 
