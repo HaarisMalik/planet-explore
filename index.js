@@ -24,7 +24,8 @@ let parallaxInstance = new Parallax(scene)
     //text2.style.marginTop = value * 0.2 + 'px';
   })
 
-//
- 
+
+
+
   
   

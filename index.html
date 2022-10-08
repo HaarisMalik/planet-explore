@@ -25,9 +25,16 @@
           </div>
         </nav>
         <section id="sectionone" class="screen">
+          <div class="swipe-icon">
+            <p class="info-swill">SWIPE TO BEGIN</p>
+            <img src="./images/swipe-icon.svg" alt="Swipe Down" />
+         </div>
           <div class="scroll-icon">
              <p class="info-scroll">SCROLL TO BEGIN</p>
              <img src="./images/ScrollIcon.svg" alt="Scroll Down" />
+          </div>
+          <div data-depth="0.1" class="text">
+            <h1>EXPLORE</h1>
           </div>
           <div id="scene">
             <div data-depth="0.1" class="bg">
@@ -38,9 +45,6 @@
             </div>
             <div data-depth="1.2" class="earth">
               <img src="images/earth.png" alt="" />
-            </div>
-            <div data-depth="0.1" class="text">
-              <h1>EXPLORE</h1>
             </div>
             <div data-depth="0.4" class="mid">
               <img src="images/mid.png" alt="" />
@@ -255,9 +259,32 @@
     </div>
   </div>
 </section>
+<section id="eleventh">       
+  <div class="container">
+    <div class="planet">
+      <img class="pluto"  src="./images/neptune.png" alt="">
+    </div>
+    <div class="right">
+     <div class="heading">
+      <h2>09. Pluto</h2>
+     </div>
+     <div class="details"> <p>Pluto is a dwarf planet in the Kuiper belt, 
+      a ring of bodies beyond the orbit of Neptune. 
+      It was the first object discovered in the Kuiper belt, in 1930. Shortly afterwards, 
+      it was declared the ninth planet from the Sun..</p>
+     </div>
+     <div class="orbit-details">
+      <h5>
+        ORBIT PERIOD:
+         <span>90,582 Earth days</span>
+      </h5>
+      <h5>KNOWN MOONS: <span>5</span></h5>
+     </div>
+    </div>
+  </div>
+</section>
 
 <section id="last">
-
   <div class="github">
    <img src="/images/githubicon.svg" alt="">
    <button class="btn"><a href="https://github.com/HaarisMalik/planet-explore-website" target="_blank" >VIEW REPOSITORY</a></button>
@@ -276,7 +303,6 @@
           <img src="./images/shootingstar.png" alt="" >
           </div>
  </div>
-
       <div class="bg3">
         <img src="./images/background.png"/>
       </div> 
@@ -302,8 +328,6 @@
 </footer>
 
     
-
-
               <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
               <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
               <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
