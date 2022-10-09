@@ -24,6 +24,12 @@ let parallaxInstance = new Parallax(scene)
     //text2.style.marginTop = value * 0.2 + 'px';
   })
 
+  //PRELOADER 
+
+  let loader = document.getElementById("preloader");
+  window.addEventListener("load", function(){
+    loader.style.display = "none";
+  })
 
 
 
