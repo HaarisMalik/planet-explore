@@ -1,6 +1,6 @@
 # Animated Planet Exploration
 
-![image](https://user-images.githubusercontent.com/52459612/195130837-7a29e7af-5016-4c5c-a025-51f5031efffd.png")
+![image](https://user-images.githubusercontent.com/52459612/195130837-7a29e7af-5016-4c5c-a025-51f5031efffd.png)
 
 ## Live Site Link:
 
